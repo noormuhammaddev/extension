@@ -6,12 +6,6 @@
 @import "helpers/_mixins";
 
 //components
-@import "components/_normalize";
 @import "components/_common";
-@import "components/hero";
-@import "components/button";
-@import "components/shapes";
-@import "components/flex";
-@import "components/slider";
-@import "components/donate";
-@import "components/headings";
+@import "components/header";
+@import "components/tabs";

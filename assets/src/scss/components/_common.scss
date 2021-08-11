@@ -1,16 +1,10 @@
 * {
   box-sizing: border-box;
+  position: relative;
 }
-
 body {
-  background-color: $white;
-  @include fontSize(18px);
-  line-height: 28px;
-  font-family: 'Bitter', serif;
-  font-weight: 400;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 
 a {
@@ -22,14 +16,38 @@ a {
   }
 }
 
-.container {
-  max-width: 960px;
+.app-container {
+  background-color: $white;
+  @include fontSize(14px);
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  max-width: 700px;
   margin: 0 auto;
-  position: relative;
+  padding: 15px;
+
+  .content {
+    border: 1px solid $alto;
+    padding: 20px;
+    @include border-radius(4px, 4px, 4px, 4px);
+
+    .content-body {
+      max-height: 640px;
+      overflow-y: auto;
+    }
+  }
 }
 
-section {
-  min-height: 480px;
-}
+ul {
+  margin: 0;
+  padding: 0;
 
-.w-100 { width: 100%; }
+  li {
+    display: inline-block;
+
+    a {
+      display: block;
+    }
+  }
+}

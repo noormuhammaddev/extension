@@ -1,0 +1,33 @@
+header {
+  .top {
+    display: flex;
+    justify-content: space-between;
+  
+    .logo {
+      max-width: 100px;
+
+      a {
+        img {
+
+        }
+      }
+    }
+
+    .top-nav {
+      ul {
+        li {
+          a {
+            color: $gray;
+            padding: 0 5px;
+            @include fontSize(13px);
+
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,35 @@
+.tabs {
+  margin: 15px 0;
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -4px;
+
+    li {
+      flex: 1;
+      text-align: center;
+      padding: 0 4px;
+
+      span {
+        display: block;
+        background-color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $danger;
+        padding: 12px 10px;
+        cursor: pointer;
+        @include border-radius(4px, 4px, 4px, 4px);
+        @include fontSize(12px);
+        @include box-shadow(0px, 4px, 6px, #e1e6ec);
+      }
+
+      &.active {
+        span {
+          background-color: $danger;
+          color: $white;
+        }
+      }
+    }
+  }
+}
