@@ -1,5 +1,5 @@
-.tabs {
-  margin: 15px 0;
+.tabs-nav {
+  margin: 30px 0;
   
   ul {
     display: flex;
@@ -30,6 +30,16 @@
           color: $white;
         }
       }
+    }
+  }
+}
+
+.tab-contents {
+  .tab-data {
+    display: none;
+
+    &.show {
+      display: block;
     }
   }
 }

@@ -25,16 +25,15 @@
                 <li><a href="#">Share</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Live Support</a></li>
-                <li><a href="#">Version: 1.0.2</a></li>
               </ul>
             </div>
           </div>
 
-          <div class="tabs">
-            <ul>
-              <li class="active"><span>Send Message</span></li>
-              <li><span>Export</span></li>
-              <li><span>Report</span></li>
+          <div class="tabs-nav">
+            <ul id="tabs">
+              <li id="tab-1" class="active"><span>Send Message</span></li>
+              <li id="tab-2"><span>Export</span></li>
+              <li id="tab-3"><span>Report</span></li>
             </ul>
           </div>
         </header>
@@ -42,14 +41,19 @@
 
         <!-- content-body start -->
         <div class="content-body">
-          asf
+          <div class="tab-contents">
+            <div class="tab-data show" id="tab-1-data">a</div>
+            <div class="tab-data" id="tab-2-data">b</div>
+            <div class="tab-data" id="tab-3-data">c</div>
+          </div>
         </div>
         <!-- content-body end -->
 
         <!-- footer start -->
         <footer>
           <div class="user-info">
-            Awais Ehsan (<a href="tel:+923026725233">+92 (302) 6725233</a>)  
+            <span>Awais Ehsan</span>
+            (<a href="tel:+923026725233">+92 (302) 6725233</a>)
           </div>
 
           <div class="brand">
@@ -59,6 +63,10 @@
         <!-- footer end -->
       </div>
     </section>
+
+    <!-- include js files -->
+    <script type="text/javascript" src="assets/dist/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/dist/js/custom.js"></script>
     
   </body>
 </html>

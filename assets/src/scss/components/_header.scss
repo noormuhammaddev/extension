@@ -17,12 +17,12 @@ header {
       ul {
         li {
           a {
-            color: $gray;
+            color: $blue;
             padding: 0 5px;
             @include fontSize(13px);
 
             &:hover {
-              color: $purple;
+              color: $danger;
             }
           }
         }
