@@ -1,0 +1,28 @@
+footer {
+  border-top: 1px solid $alto;
+  padding: 20px 20px 0;
+  margin: 30px -20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .user-info {
+    a {
+      color: $gray;
+
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+
+  .brand {
+    a { 
+      color: $gray;
+
+      &:hover {
+        color: $purple;
+        text-decoration: underline;
+      }
+    }
+  }
+}
