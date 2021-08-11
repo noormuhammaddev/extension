@@ -1,4 +1,4 @@
-# appalachia HTML
+# Google Chrome Extension HTML
 
 This is the robust, static html assignment/test. This assignment has been developed by using the following stuff:
 - HTML5
