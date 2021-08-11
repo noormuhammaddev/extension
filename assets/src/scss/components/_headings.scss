@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.section-heading {
+  @include fontSize(40px);
+  line-height: 48px;
+  margin-bottom: 30px;
+  font-weight: 700;
+
+  &.white { color: $white; }
+
+}

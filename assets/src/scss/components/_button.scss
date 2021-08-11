@@ -1,0 +1,39 @@
+.button {
+  background-color: $white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 11px 29px;
+  min-width: 154px;
+  height: 48px;
+  border: 0;
+  position: relative;
+  color: $dark-maroon;
+  cursor: pointer;
+  transition: 0.3s ease all;
+
+  &:hover { background-color: $grey-2; }
+
+  &.with-icon {
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 48px solid transparent;
+      @include triangle(24px, $transparent, $transparent, $transparent, $grey);
+    }
+  }
+
+  &.danger {
+    background-color: $red-2;
+    color: $white;
+
+    &:before {
+      @include triangle(24px, $transparent, $transparent, $transparent, $red-1);
+    }
+
+    &:hover {
+      background-color: $maroon;
+    }
+  }
+}

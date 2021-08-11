@@ -1,0 +1,24 @@
+.hero {
+  position: relative;
+
+  .container {
+    min-height: 480px;
+  }
+
+  .hero-description {
+    width: 505px;
+    margin-left: 82px;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+
+  .shape {
+    position: absolute;
+    top: 0;
+
+    &.polygon { right: 0; }
+    &.triangles { right: 100%; }
+  }
+}

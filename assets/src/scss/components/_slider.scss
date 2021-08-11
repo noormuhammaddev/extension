@@ -1,0 +1,23 @@
+.slider {
+  .item {
+    position: relative;
+    height: 480px;
+
+    .shape {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .container {
+    > .shape{
+      position: absolute;
+      top: 0;
+  
+      &.bottom-right { right: 100%; }
+  
+      &.top-left { left: 100%; }
+    }    
+  }
+}

@@ -1,0 +1,72 @@
+.shape {
+  width: 480px;
+  height: 480px;
+  position: relative;
+
+  &.polygon { 
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.top-left {
+      &:before {
+        @include shape(0, 0, 100%, 0, 0%, 100%, $red-2); 
+      }
+
+      &.maroon:before {
+        @include shape(0, 0, 100%, 0, 0%, 100%, $maroon); 
+      }
+    }
+
+    &.bottom-left {
+      &:before {
+        @include shape(0%, 0%, 100%, 100%, 0%, 100%, $red-2);
+      }
+
+      &.maroon:before {
+        @include shape(0%, 0%, 100%, 100%, 0%, 100%, $maroon);
+      }
+    }
+
+    &.top-right {
+      &:before {
+        @include shape(100%, 0%, 100%, 100%, 0%, 0%, $red-2);
+      }
+
+      &.maroon:before {
+        @include shape(100%, 0%, 100%, 100%, 0%, 0%, $maroon);
+      }
+      
+    }
+
+    &.bottom-right {
+      &:before {
+        @include shape(100%, 0%, 100%, 100%, 0%, 100%, $red-2);
+      }
+
+      &.maroon:before {
+        @include shape(100%, 0%, 100%, 100%, 0%, 100%, $maroon);
+      }
+    }
+  }
+
+  &.triangles {
+    display: flex;
+    align-items: center;
+
+    span {
+      flex: 1;
+      height: 478px;
+      @include shape(0, 0, 100%, 50%, 0%, 100%, $red-2); 
+    }
+
+    &.with-shap-3 { 
+      span {
+        height: 319px;
+      }
+    }
+  }
+}
