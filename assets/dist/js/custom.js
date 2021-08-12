@@ -1,4 +1,6 @@
 // functions
+
+// tabs functionality
 function tabs(currentElement) {
   currentElID = currentElement.attr('id');
   console.log(currentElID);
